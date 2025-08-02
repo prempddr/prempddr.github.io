@@ -1,0 +1,39 @@
+:root {
+    --main-background: #090E16;
+
+    --btn-primary-text: #7B4AE2;
+    --btn-primary-background: #7B4AE210;
+}
+
+.height-full {
+    min-height: 100vh;
+    min-height: 100svh;
+}
+
+.main-background {
+    background-color: var(--main-background) !important;
+}
+
+
+/* ! font styles */
+@font-face {
+    font-family: "regular";
+    src: url("../font/regular.ttf");
+}
+
+@font-face {
+    font-family: "italic";
+    src: url("../font/italic.ttf");
+}
+
+@font-face {
+    font-family: "symbols";
+    src: url("../font/symbols.ttf");
+}
+
+* {
+    font-family: "regular", italic, symbols, sans-serif;
+    font-size: 16px;
+}
+
+/* ---  */

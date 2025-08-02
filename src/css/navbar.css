@@ -1,0 +1,110 @@
+:root {
+    --navbar-background: #0F1120;
+    --navbar-text: #FFFFFF50;
+    --navbar-text-hover: #FFFFFF;
+    --navbar-text-active: #7B4AE250;
+    --navbar-icon-color: #7B4AE250;
+}
+
+.navbar-nav,
+.navbar>.container-fluid {
+    font-size: 0.85rem;
+}
+
+.navbar-background {
+    background-color: var(--navbar-background) !important;
+}
+
+.navbar-background,
+.navbar-background a {
+    color: var(--navbar-text);
+}
+
+.navbar-background a:hover {
+    color: var(--navbar-text-hover);
+}
+
+.nav-link.active,
+.nav-link:focus {
+    color: var(--navbar-text-active) !important;
+    font-weight: bold;
+}
+
+.nav-link.active:hover,
+.nav-link.active:focus,
+.nav-link:hover,
+.nav-link.active:active {
+    color: var(--btn-primary-text) !important;
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:hover,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-toggler .toggler-icon {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: var(--navbar-text);
+    border-radius: 1px;
+    left: 0;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.navbar-toggler .middle-bar {
+    margin-top: 0px;
+}
+
+/* after clicking the navbar-toggler */
+.navbar-toggler .top-bar {
+    margin-top: 0px;
+    transform: rotate(45deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    margin-top: 0px;
+    transform: rotate(-45deg);
+}
+
+/* before clicking the navbar-toggler */
+.navbar-toggler.collapsed .top-bar {
+    margin-top: -20px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=1);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    margin-top: 20px;
+    transform: rotate(0deg);
+}
